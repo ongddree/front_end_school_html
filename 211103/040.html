@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변단위</title>
+    <style>
+        .one {
+            height: 200px;
+            width: 50%;
+            background-color: darkblue;
+        }
+
+        .two {
+            height: 100px;
+            width: 50%;
+            background-color: green;
+        }
+
+        .three {
+            height: 100px;
+            width: 50vw;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- -- %는 부모 폰트 기준으로 계산 -- -->
+    <div class="one">
+        <div class="two"></div>
+    </div>
+    <br>
+    <!-- vh는 스크린 크기 기준 -->
+    <div class="one">
+        <div class="three"></div>
+    </div>
+</body>
+</html>
