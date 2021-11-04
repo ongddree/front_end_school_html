@@ -1,0 +1,139 @@
+:root {
+    /* other color */
+    --rab-color-1: #D9B0C6;
+    --rab-color-2: #732f4f;
+    /* cat color */
+    --cat-color-1: #D7D7D9;
+    --cat-color-2: #7A7987;
+    --cat-color-3: #4E4D55;
+    --cat-color-4: #434551;
+}
+
+body {
+    background-color: var(--rab-color-2);
+    box-sizing: border-box;
+}
+
+
+.center {
+    position: relative;
+    margin: 50px auto;
+    width: 400px;
+    height: 420px;
+}
+
+.cat-face {
+    position: absolute;
+    bottom: 0;
+    width:400px;
+    height: 380px;
+    border: 10px solid var(--cat-color-4);
+    border-radius: 100%;
+    background-color: var(--cat-color-1);
+    z-index: 3;
+}
+
+.ear {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border: 10px solid var(--cat-color-4);
+    border-radius: 50%;
+    background-color: var(--cat-color-1);
+}
+
+.left.ear {
+    left: 10px;
+}
+
+.right.ear {
+    right: 10px;
+}
+
+.left-small.ear {
+    transform: scale(0.6);
+    background-color: var(--cat-color-3);
+
+}
+
+.right-small.ear {
+    transform: scale(0.6);
+    /* 질문 - 대칭 시키는 법 */
+    right: -6px;
+    top:-2px;
+    background-color: var(--cat-color-3);
+}
+
+.eye {
+    position: absolute;
+    top: 130px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--cat-color-3);
+}
+
+.left.eye {
+    left: 140px;
+}
+
+.right.eye {
+    right: 140px;
+}
+
+.nose {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80px;
+    height: 40px;
+    border-radius: 40% 40% 80% 80%;
+    background-color:  var(--cat-color-3);
+}
+
+.whisker {
+    position: absolute;
+    width: 170px;
+    height: 10px;
+    border-radius: 20px;
+    background-color:  var(--cat-color-2);
+}
+
+
+.whisker.one{
+    top: 40%;
+    left: -10%;
+    transform: rotate(20deg);
+}
+
+.whisker.two{
+    top: 50%;
+    left: -12%;
+}
+
+.whisker.three{
+    top: 60%;
+    left: -10%;
+    transform: rotate(-20deg);
+}
+
+
+.whisker.four{
+    top: 40%;
+    right: -10%;
+    transform: rotate(-20deg);
+}
+
+
+.whisker.five{
+    top: 50%;
+    right: -12%;
+}
+
+.whisker.six{
+    top: 60%;
+    right: -10%;
+    transform: rotate(20deg);
+}
