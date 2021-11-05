@@ -1,0 +1,94 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 시작 */
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+                
+body {
+font-family: 'NanumSquare', sans-serif;
+}
+
+.naver {
+    width: 350px;
+    height: 115px;
+    border: 1px solid gray;
+    background-color: rgb(247, 249, 250);
+    padding: 16px;
+    color: #808080;
+    position: relative;
+}
+
+
+.login-box {
+    width: 100%;
+    background-color: #2DB400;
+    margin: 16px 0;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+a,p {
+    font-size: 12px;
+    color: #808080;
+    text-decoration: none;
+}
+
+.sub-area {
+    width: 303px;
+    height: 16px;
+}
+
+.icon {
+    height: 14px;
+    width: 10px;
+}
+
+.join {
+    position: absolute;
+    right: 16px;
+    border: none;
+    background-color: rgb(247, 249, 250);
+}
