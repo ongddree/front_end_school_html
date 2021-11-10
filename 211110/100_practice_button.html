@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        @keyframes change {
+            25% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(500px);
+            }
+            75% {
+                
+            }
+        }
+        
+        div {
+            position: relative;
+            color: white;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 50px;
+            width: 200px;
+            height:100px;
+            line-height: 100px;
+            background-color: #0066ff;
+            border: 2px solid black;
+            border-radius: 15px;
+            transition: all 2s;
+            overflow: hidden;
+        }
+
+        .c17::before {
+            content: '';
+            position: absolute;
+            background-color: white;
+            width: 200px;
+            height: 10px;
+            left: 0;
+            bottom: 0;
+            transform: translateX(-300px);
+            transition: all 1s;
+        }
+        .c17::after {
+            content: '';
+            position: absolute;
+            background-color: white;
+            width: 200px;
+            height: 10px;
+            right: 0;
+            top: 0;
+            transform: translateX(300px);
+            transition: all 1s;
+        }
+
+
+        .c17:hover::before {
+            /* transform: translateX(0); */
+            animation-name: change;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+
+        .c17:hover::after {
+            transform: translateX(0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="c17">Pseudo Element</div>
+</body>
+</html>
