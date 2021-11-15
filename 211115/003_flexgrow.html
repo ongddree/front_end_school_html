@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>flex-3</title>
+<link rel="stylesheet" href="../../reset.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+    body {
+        font-family: 'Shippori Antique B1', sans-serif;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .container-color {
+        background-color: #0066ff;
+        border: solid 3px black;
+        border-radius: 36px;
+        height: 300px;
+        margin: 5px;
+        padding: 5px;;
+    }
+
+    .item-color {
+        background-color: orange;
+        border: solid 3px black;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+        /* base */
+
+    .container1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item {
+        flex-grow: 1;
+    }
+    
+    .item:nth-child(2) {
+        flex-grow: 5;
+    }
+
+
+</style>
+</head>
+<body>
+    <h3>flex-basis</h3>
+    <div class="container-color container1">
+        <div class="item-color item">lorem</div>
+        <div class="item-color item">Lorem, ipsum.</div>
+        <div class="item-color item">Lorem, ipsum dolor.    
+        </div>
+        <div class="item-color item">Lorem ipsum dolor sit.
+        </div>
+    </div>
+
+</body>
+</html>

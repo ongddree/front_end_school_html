@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>flex-1</title>
+<link rel="stylesheet" href="../../reset.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+    body {
+        font-family: 'Shippori Antique B1', sans-serif;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    /* base */
+
+
+    .container-color {
+        background-color: #0066ff;
+        border: solid 3px black;
+        border-radius: 36px;
+        height: 300px;
+        margin: 5px;
+        padding: 5px;;
+    }
+
+    .item-color {
+        background-color: orange;
+        border: solid 3px black;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .container1 {
+            display: flex;
+            /* display: block; */
+        }
+
+    .container2 {
+        display: flex;
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+        justify-content: space-between;
+    }
+
+    .container3 {
+            display: flex;
+            /* align-items: stretch; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            align-items: baseline;
+        }
+
+</style>
+</head>
+<body>
+    <h3>display: flex</h3>
+    <div class="wrap">
+        <div class="container-color container1">
+            <div class="item-color item1">lorem</div>
+            <div class="item-color item2">Lorem, ipsum.</div>
+            <div class="item-color item3">Lorem, ipsum dolor.
+                
+            </div>
+            <div class="item-color item4">Lorem ipsum dolor sit.
+            </div>
+        </div>
+    </div>
+
+    <h3>justify-content:</h3>
+    <div class="container-color container2">
+        <div class="item-color item1">lorem</div>
+        <div class="item-color item2">Lorem, ipsum.</div>
+        <div class="item-color item3">Lorem, ipsum dolor.
+            
+        </div>
+        <div class="item-color item4">Lorem ipsum dolor sit.
+        </div>
+    </div>
+
+    <h3>justify-content:</h3>
+    <div class="container-color container3">
+        <div class="item-color item1">lorem</div>
+        <div class="item-color item2">Lorem, ipsum.</div>
+        <div class="item-color item3">Lorem, ipsum dolor.
+            
+        </div>
+        <div class="item-color item4">Lorem ipsum dolor sit.
+        </div>
+    </div>
+</body>
+</html>

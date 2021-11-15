@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>flex-5</title>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+    body {
+        font-family: 'Shippori Antique B1', sans-serif;
+    }
+
+
+    h3 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .container-color {
+        background-color: #0066ff;
+        border: solid 3px black;
+        border-radius: 36px;
+        height: 75px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .item-color {
+        background-color: orange;
+        border: solid 3px black;
+        border-radius: 20px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+        /* base */
+
+    .container {
+        display: flex;
+    }
+
+    .item {
+        text-align: center;
+        color: black;
+        width: 100px;
+        font-size: 1.2em;
+        font-weight: 700;
+        line-height: 2.5em;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .logo {
+        width:100px;
+        text-align: center;
+        color: black;
+        /* font-size: 1.2em;
+        font-weight: 700; */
+        line-height: 2.5em;
+        transition: all .5s;
+    }
+
+    /* 간격 자동 조정 */
+    .logo {
+        margin-right: auto;
+    }
+
+    .item:hover {
+        width:120px;
+        background-color: #008C12;
+    }
+    </style>
+</head>
+<body>
+    <ul class="container-color container">
+        <li class="item-color item logo">LOGO</li>
+        <li class="item-color item">ABOUT</li>
+        <li class="item-color item">SKILL</li>
+        <li class="item-color item">POFOL</li>
+        <li class="item-color item">CONTACT</li>
+    </ul>
+    <pre>
+        /* Keyword values */
+        flex: auto;
+        flex: initial;
+        flex: none;
+
+        /* One value, unitless number: flex-grow */
+        flex: 2;
+
+        /* One value, length or percentage: flex-basis */
+        flex: 10em;
+        flex: 30%;
+
+        /* Two values: flex-grow | flex-basis */
+        flex: 1 30px;
+
+        /* Two values: flex-grow | flex-shrink */
+        flex: 2 2;
+
+        /* Three values: flex-grow | flex-shrink | flex-basis */
+        flex: 2 2 10%;
+
+        /* Global values */
+        flex: inherit;
+        flex: initial;
+        flex: unset;
+    </pre>
+</body>
+</html>
