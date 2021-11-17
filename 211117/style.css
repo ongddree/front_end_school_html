@@ -1,0 +1,104 @@
+/* @font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+    * {
+        box-sizing: border-box;
+        font-size: 32px;
+    }
+    body {
+        /* font-family: 'Do Hyeon', sans-serif; */
+        font-family: 'Cute Font', cursive;
+        /* font-family: 'GongGothicMedium'; */
+    }
+
+.landing {
+    background-color: #0066ff;
+    height: 70vh;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+
+.landing__tit {
+    font-weight: 700;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding: 3px 0;
+}
+
+.landing p {
+    margin-bottom: 2px;
+}
+
+.footer {
+    background-color: #E8EEF4;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+
+/* test.html */
+
+.header {
+    background-color: #0066ff;
+    height: 10vh;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+
+.header__tit {
+    font-weight: 700;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    margin-top: 4px;
+}
+
+.qna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 40px 0 50px;
+}
+
+.qna p {
+    width: 80%;
+    text-align: center;
+}
+
+
+/* result.html */
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.result img {
+    max-width: 500px;
+    width: 80%;
+}
